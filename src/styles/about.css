@@ -157,6 +157,8 @@
 @media (max-width: 890px) {
   .item__p{
   font-size: 8px;
+  line-height: 10px;
+  padding-top: 5px;
   }
   .parent{
     height: 50vh;

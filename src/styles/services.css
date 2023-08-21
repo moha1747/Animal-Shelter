@@ -23,6 +23,7 @@ input {
   grid-template-rows: 1fr;
   grid-column-gap: 35px;
   grid-row-gap: 0px;
+  padding-top: 20px;
 }
 
 .div1__p {
@@ -82,7 +83,6 @@ h2 {
   transition: transform 0.3s, box-shadow 0.3s;
   font-size: 24px;
   cursor: pointer;
-
 }
 .btn__search:hover {
   transform: translateY(-3px);
@@ -113,21 +113,53 @@ border-radius: 1rem;
 }
 
 @media (min-width: 475px) {
-  .div__p{
+  .div__p {
     position: absolute;
     margin-bottom: 100px;
     margin-left: 10px;
-
   }
-  img{
+  img {
     height: 30vh;
     width: 50vw;
-    
   }
   .petition__header {
-  text-align: center;
-  font-size: 12px;
+    text-align: center;
+    font-size: 12px;
+  }
+    .div3__p {
+    position: relative;
+    max-width: 40vw;
+    height: auto;
+    top: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .petition__parent {
+    padding-top: 50px;
+  }
+  .petition__header {
+    margin-top: 100px;
+  }
+  .div3__p {
+    position: relative;
+    max-width: 30vw;
+    height: auto;
+    top: 70px;
+  }
 }
 
- 
+@media (min-width: 1237px) {
+  .petition__parent {
+    padding-top: 50px;
+  }
+  .petition__header {
+    margin-top: 100px;
+  }
+    .div3__p {
+    position: relative;
+    max-width: 40vw;
+    height: auto;
+    top: 100px;
+    left: 100px;
+  }
 }
