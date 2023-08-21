@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - gh-pages
 
 jobs:
   build:
@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
 
       - name: Build project
         run: npm run build
