@@ -1,0 +1,133 @@
+.search__container {
+  position: relative;
+  height: 100vh;
+  padding-top: 20px;
+}
+.petition__container {
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid blue; */
+  height: 100vh;
+}
+input {
+  max-width: 80%;
+}
+
+.petition__header {
+  text-align: center;
+}
+
+.petition__parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 35px;
+  grid-row-gap: 0px;
+}
+
+.div1__p {
+  grid-area: 1 / 1 / 2 / 2;
+  letter-spacing: 0.09rem;
+  line-break: none;
+  border: 5px solid var(--clr-light);
+  border-radius: 1rem;
+  padding: 1rem;
+  color: var(--clr-light);
+}
+
+.div2__p {
+  grid-area: 1 / 2 / 2 / 3;
+  letter-spacing: 0.09rem;
+  border: 5px solid var(--clr-light);
+  border-radius: 1rem;
+}
+h2 {
+  padding: none;
+}
+.div3__p {
+  width: 50%;
+  /* border: 5px solid yellow; */
+  flex-direction: center;
+
+  justify-content: space-between;
+  max-height: 50px;
+  margin-top: 50px;
+  margin-left: 90px;
+}
+
+.input__search {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  max-width: 100%;
+}
+.input__search input {
+  max-width: 380px;
+}
+
+.btn__search {
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: 5rem;
+  letter-spacing: -0.05em;
+  background-color: var(--clr-rose);
+  color: var(--clr-light);
+  padding: 0.5em 1em;
+  box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),
+    0 6px 6px rgba(255, 29, 72, 0.5), 0 0 100px -10px var(--clr-rose);
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-size: 24px;
+  cursor: pointer;
+
+}
+.btn__search:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25),
+    0 10px 10px rgba(255, 29, 72, 0.22), 0 0 120px -10px var(--clr-rose);
+}
+.petition__form {
+  /* border: 5px solid var(--clr-light);
+border-radius: 1rem;
+  padding: 1rem;
+  color: var(--clr-light);
+    left: 0;
+  background-color: var(--clr-dark);
+  display: block; */
+}
+
+.div4__p {
+  /* border: 5px solid lightgreen; */
+  display: inline;
+  padding-top: 2rem;
+  width: 50%;
+  align-self: flex-end;
+  margin-left: 50px;
+  text-align: center;
+  align-items: center;
+  padding-left: 100px;
+}
+
+@media (min-width: 475px) {
+  .div__p{
+    position: absolute;
+    margin-bottom: 100px;
+    margin-left: 10px;
+
+  }
+  img{
+    height: 30vh;
+    width: 50vw;
+    
+  }
+  .petition__header {
+  text-align: center;
+  font-size: 12px;
+}
+
+ 
+}
