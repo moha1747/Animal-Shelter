@@ -48,7 +48,6 @@ export const About = () => {
               src="https://wellbeingintl.org/wp-content/uploads/2020/12/USA-Roaming-Dogs.png"
               alt="Graph depicting a fact about animal shelters"
             />
-            {/* Add more images as required */}
           </div>
         </div>
       </div>

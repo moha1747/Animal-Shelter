@@ -11,8 +11,8 @@
     0 6px 6px rgba(255, 29, 72, 0.5), 0 0 100px -10px var(--clr-rose);
   transition: transform 0.3s, box-shadow 0.3s;
   font-size: 24px;
-  width: 160px;
-  margin-right: 200px;
+  width: 100px;
+  margin-right: 40px;
   cursor: pointer;
   
 }
@@ -26,13 +26,13 @@
 input{
     padding-bottom: 10px;
 }
-@media (min-width: 475px){
+@media (max-width: 480px){
   .petition__container{
     font-size: 18px;
     text-align: center;
-    margin-bottom: 150px;
-
-  
     
+  }
+  .btn__form{
+    width: 60px;
   }
  }

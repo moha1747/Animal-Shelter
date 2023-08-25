@@ -1,101 +1,79 @@
-
-
 .header {
-  display: block;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 10px;
 }
 
-a {
-  padding: 50px;
+.header__menu, .navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 2em;
+  padding: 0;
+}
+
+.header__link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--clr-light);
+  letter-spacing: -0.05em;
+  transition: color 0.3s;
+}
+
+.header__link:hover {
+  color: var(--clr-rose);
 }
 
 .burger {
   background-color: transparent;
   border-radius: 1rem;
-  
+  display: none;
+  order: 2; 
+fill: white;
+border-radius: 1rem;}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-/* xs */
-@media (min-width: 475px) {
+.navigation ul {
+  display: none;
+}
+
+/* Mobile view */
+@media (max-width: 475px) {
   .header__menu {
     display: none;
   }
-  svg {
-    fill: var(--clr-light);
-    border-radius: 0px 10px;
-  }
- 
+  .header__link:hover {
+  color: var(--clr-rose);
 }
 
-/* md */
+  .burger {
+    display: block;
+  }
+  
+  .navigation ul {
+    position: relative;
+    right: 10px;
+
+    background-color: rgba(0,0,0,0.9); 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  .navigation li {
+    padding: 0.5rem;
+  }
+}
+
+/* Tablet and desktop view */
 @media (min-width: 768px) {
-  .header__menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    gap: 2em;
-  
-    
-  }
-
-  .header__link {
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--clr-light);
-    letter-spacing: -0.05em;
-    transition: color 0.3s;
-    text-align: center; 
- /* Centering the text as requested */
-  }
-
-  .header__link:hover {
-    color: var(--clr-slate600);
-  }
-
-  .header__line {
-    /* border: 1px solid var(--clr-slate800); */
-    padding-top: 1.5em;
-  }
-
-  .burger{
-    display: none;
-  }
-  .navigation{
+  .navigation {
     display: none;
   }
 }
-
-@media (min-width: 960px) {
- .header__menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    gap: 2em;
-  
-    
-  }
-
-  .header__link {
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--clr-light);
-    letter-spacing: -0.05em;
-    transition: color 0.3s;
-  }
-
-  .header__link:hover {
-    color: var(--clr-rose);
-  }
-
-  .burger{
-    display: none;
-  }
-
-  
- }

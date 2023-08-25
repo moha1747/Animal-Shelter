@@ -8,7 +8,6 @@ export const Footer = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // You can implement your own validation rules here
     const nameInput = event.target.name.value;
     const emailInput = event.target.email.value;
     const messageInput = event.target.message.value;

@@ -39,7 +39,9 @@ const googleMapsURL = `https://www.google.com/maps/place/?q=place_id:${shelter.p
           <strong>Address:</strong> {shelter.formatted_address}
         </p>
         <a href={googleMapsURL} target="_blank" rel="noopener noreferrer">
-          <button className="btn__maps">View More</button>
+          <div className="btn__maps">
+            <button>View More</button>
+            </div>
         </a>
       </div>
       

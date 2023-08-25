@@ -1,4 +1,6 @@
-
+html{
+  width: auto;
+}
 
 .btn {
   display: inline-block;

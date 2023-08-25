@@ -2,28 +2,6 @@
 
 
 
-html, body,  span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;}
-
 body {
 	line-height: 1;
 }
@@ -32,32 +10,9 @@ ol, ul {
 	list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
-}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 body {
 	-webkit-text-size-adjust: none;
-}
-
-mark {
-	background-color: transparent;
-	color: inherit;
-}
-
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
 }
 
 input, select, textarea {
@@ -68,26 +23,14 @@ input, select, textarea {
 }
 
 /* Basic */
-
-	@-ms-viewport {
-		width: device-width;
-	}
+ */
 
 	body {
 		-ms-overflow-style: scrollbar;
 	}
 
-	@media screen and (max-width: 480px) {
+	
 
-		html, body {
-			min-width: 320px;
-		}
-
-	}
-
-	html {
-		box-sizing: border-box;
-	}
 
 	*, *:before, *:after {
 		box-sizing: inherit;
@@ -214,7 +157,6 @@ input, select, textarea {
 
 	strong, b {
 		color: #ffffff;
-		font-weight: 600;
 	}
 
 	em, i {
@@ -240,9 +182,7 @@ input, select, textarea {
 			border-bottom: 0;
 		}
 
-		h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
-			font-weight: 200;
-		}
+	
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			padding-bottom: 1em;
@@ -280,77 +220,6 @@ input, select, textarea {
 		}
 
 	}
-
-	sub {
-		font-size: 0.8em;
-		position: relative;
-		top: 0.5em;
-	}
-
-	sup {
-		font-size: 0.8em;
-		position: relative;
-		top: -0.5em;
-	}
-
-	blockquote {
-		border-left: solid 4px rgba(255, 255, 255, 0.125);
-		font-style: italic;
-		margin: 0 0 2em 0;
-		padding: 0.5em 0 0.5em 2em;
-	}
-
-	code {
-		background: rgba(255, 255, 255, 0.025);
-		border-radius: 5px;
-		border: solid 2px rgba(255, 255, 255, 0.125);
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		margin: 0 0.25em;
-		padding: 0.25em 0.65em;
-	}
-
-	pre {
-		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		margin: 0 0 2em 0;
-	}
-
-		pre code {
-			display: block;
-			line-height: 1.75em;
-			padding: 1em 1.5em;
-			overflow-x: auto;
-		}
-
-	hr {
-		border: 0;
-		border-bottom: solid 2px rgba(255, 255, 255, 0.125);
-		margin: 2.5em 0;
-	}
-
-		hr.major {
-			margin: 4em 0;
-		}
-
-	.align-left {
-		text-align: left;
-	}
-
-	.align-center {
-		text-align: center;
-	}
-
-	.align-right {
-		text-align: right;
-	}
-
-
-
-/* Icons */
-
-
 /* Contact */
 
 	ul.contact {
@@ -375,7 +244,6 @@ input, select, textarea {
 				line-height: 1;
 				text-transform: none !important;
 				font-family: 'Font Awesome 5 Free';
-				font-weight: 400;
 			}
 
 			ul.contact li:before {
@@ -421,9 +289,7 @@ input, select, textarea {
 	}
 
 	input[type="text"],
-	input[type="password"],
 	input[type="email"],
-	input[type="tel"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -443,18 +309,14 @@ input, select, textarea {
 	}
 
 		input[type="text"]:invalid,
-		input[type="password"]:invalid,
 		input[type="email"]:invalid,
-		input[type="tel"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
 		}
 
 		input[type="text"]:focus,
-		input[type="password"]:focus,
 		input[type="email"]:focus,
-		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
 			border-color: #5b6ba6;
@@ -464,7 +326,6 @@ input, select, textarea {
 	
 
 	input[type="text"],
-	input[type="password"],
 	input[type="email"],
 	select {
 		height: 2.75em;

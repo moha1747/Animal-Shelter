@@ -1,18 +1,21 @@
-/* styles.css or wherever you keep your CSS */
-.shelter-container{
-    padding-top: 20px;
-    
+.shelter-container {
+    width: 100%;
+    display: block; 
+    clear: both;
+    padding-top: 40px; 
+    position: relative; 
+    z-index: 1; 
+    margin-bottom: 50px;
 }
+
 .shelter-card {
     width: 100%; 
     border-top: 1px solid #ddd;
-    
-    
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-
+    margin-bottom: 30px; 
 }
 
 .shelter-card h3 {
@@ -27,32 +30,12 @@
 .shelter-card a:hover {
     text-decoration: underline;
 }
-.shelter-card button {
-    background-color: #007BFF;
-}
-.btn__maps{
-display: inline-block;
-  font-weight: 600;
-  text-decoration: none;
-  letter-spacing: -0.05em;
-  background-color: #6a00ff;
-  color: var(--clr-light);
-  padding: 0.5em 1em;
-  border-radius: 1.5rem;
-        box-shadow: 0 10px 20px  #007BFF,
-    0 6px 6px  #007BFF, 0 0 100px -10px  #6a00ff;
-  transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    margin-bottom: 10px;
 
-}
-.btn__maps:hover {
-  transform: translateY(-3px);
-
-  box-shadow: 0 14px 28px #007BFF,
-    0 10px 10px#007BFF, 0 0 120px -10px #6a00ff;
-}
-strong{
-    line-height: none;
+.btn__maps {
+    display: flex;
+    justify-content: center;
 }
 
+strong {
+    line-height: 1.5;
+}
