@@ -18,7 +18,7 @@ export const Home = () => {
 
     const fetchShelters = (state, city) => {
       const query = `${city} ${state} animal shelter`;
-      const dummyElement = document.createElement("div"); // Temporarily create an element for PlacesService
+      const dummyElement = document.createElement("div"); // Temporarily creates an element for search div
       const service = new google.maps.places.PlacesService(dummyElement);
 
       service.findPlaceFromQuery(
@@ -28,7 +28,7 @@ export const Home = () => {
         },
         function (results, status) {
           if (status === google.maps.places.PlacesServiceStatus.OK) {
-            setShelters(results); // Assuming you're in a React component context
+            setShelters(results); 
           } else {
             console.error("Error fetching results:", status);
           }
