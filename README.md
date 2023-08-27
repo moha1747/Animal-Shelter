@@ -6,22 +6,10 @@ A revamped version of a project from Codepath Web 101. This React application le
 ### Setup & Running
 Navigate to Project Directory:
 
-    cd animal-shelter-main
+    cd <folderName>
 
 ### Install and Run Vite    
 
     npm install vite@latest
     npm run dev
 
-
-
-
-
-
-
-
-
-
-
-
-# test
