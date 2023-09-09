@@ -1,0 +1,67 @@
+.petition__container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+
+input {
+    max-width: 80%;
+}
+
+.petition__header {
+    display: flex;
+    justify-content: center;
+}
+
+.petition__parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 80%; 
+}
+
+.div1__p, .div2__p {
+    flex-basis: 48%;
+    box-sizing: border-box;
+    letter-spacing: 0.09rem;
+    border: 5px solid var(--clr-light);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--clr-light);
+    margin-bottom: 20px;
+}
+
+.div3__p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.div4__p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media (max-width: 890px) {
+    .div1__p, .div2__p {
+        flex-basis: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .petition__container {
+        height: max-content;
+    }
+    .div1__p, .div2__p, .div3__p, .div4__p {
+        width: 100%;
+    }
+}

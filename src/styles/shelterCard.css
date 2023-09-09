@@ -1,0 +1,41 @@
+.shelter-container {
+    width: 100%;
+    display: block; 
+    clear: both;
+    padding-top: 40px; 
+    position: relative; 
+    z-index: 1; 
+    margin-bottom: 50px;
+}
+
+.shelter-card {
+    width: 100%; 
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+.shelter-card h3 {
+    margin-top: 0;
+}
+
+.shelter-card a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.shelter-card a:hover {
+    text-decoration: underline;
+}
+
+.btn__maps {
+    display: flex;
+    justify-content: center;
+}
+
+strong {
+    line-height: 1.5;
+}
