@@ -78,7 +78,7 @@
 }
 
 .div4 .graph-images {
-  padding: 0px; 
+  padding: 0px; /* Adjust this value to control the amount of "shrinkage" */
 }
 
 .graph-images img {
@@ -150,7 +150,7 @@
   }
 
     .parent::before, .parent::after {
-   
+        /* Hiding the animated shapes completely */
         display: none;
     }
 }
